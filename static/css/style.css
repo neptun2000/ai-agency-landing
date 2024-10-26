@@ -6,6 +6,8 @@
 body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
 }
 
 .navbar {
@@ -20,6 +22,15 @@ body {
 
 section {
     padding: 100px 0;
+    position: relative;
+}
+
+#hero {
+    background: linear-gradient(135deg, rgba(13, 202, 240, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#services {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(13, 202, 240, 0.1) 100%);
 }
 
 .fade-in {
@@ -37,18 +48,42 @@ section {
     transition: var(--transition);
     border: none;
     background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    height: 100%;
 }
 
 .card:hover {
     transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
 }
 
 .feather {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     stroke: var(--primary-color);
-    stroke-width: 2;
+    stroke-width: 1.5;
     stroke-linecap: round;
     stroke-linejoin: round;
     fill: none;
+    margin-bottom: 1.5rem;
+}
+
+#contact {
+    background: linear-gradient(135deg, rgba(13, 202, 240, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--bs-light);
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+    color: var(--bs-light);
 }
