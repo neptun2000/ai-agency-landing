@@ -77,3 +77,40 @@ section {
     border-color: var(--primary-color);
     color: var(--bs-light);
 }
+
+.get-started-btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 2px solid var(--bs-info);
+}
+
+.get-started-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 202, 240, 0.3);
+}
+
+.get-started-btn .feather {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.get-started-btn:hover .feather {
+    transform: translateX(5px);
+}
+
+.cta-wrapper {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+    .cta-wrapper {
+        margin-bottom: 0;
+    }
+}
