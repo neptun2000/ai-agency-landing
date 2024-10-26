@@ -1,0 +1,54 @@
+:root {
+    --primary-color: var(--bs-info);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.navbar-scrolled {
+    padding: 0.5rem 0;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: var(--transition);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card {
+    transition: var(--transition);
+    border: none;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.feather {
+    width: 24px;
+    height: 24px;
+    stroke: var(--primary-color);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
